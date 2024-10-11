@@ -1,9 +1,8 @@
 function countTypes(arr) {
-    let countOfStr = 0;
-    let countOfNum = 0;
-    let countOfBool = 0;
+    var countOfStr = 0;
+    var countOfNum = 0;
+    var countOfBool = 0;
 
-    // Recursive function to handle nested arrays
     function recursiveCount(arr) {
         arr.forEach(element => {
             if (typeof element === 'string') {
@@ -25,6 +24,5 @@ function countTypes(arr) {
     alert(`Booleans: ${countOfBool}`);
 }
 
-// Test the function
-let arr = ["2", 2, "a", 3, 6, true, false, [1, "2", [1, "a", "b", true, false], "a"], false, true];
+var arr = ["2", 2, "a", 3, 6, true, false, [1, "2", [1, "a", "b", true, false], "a"], false, true];
 countTypes(arr);
